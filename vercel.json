@@ -1,17 +1,13 @@
 {
   "functions": {
-    "index.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.6.0"
     },
-    "api/*.php": {
+    "*.php": {
       "runtime": "vercel-php@0.6.0"
     }
   },
   "routes": [
-    {
-      "src": "/api/nilai",
-      "dest": "/index.php"
-    },
     {
       "src": "/(.*)",
       "dest": "/index.php"
